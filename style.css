@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background: #2b2b2b;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+}
+.card{
+    width:220px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.card a {
+    display: inline-block; 
+    margin: 10px 4px 0 4px;
+    width: 40%;           
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.upload-section {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
